@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 1em;
+    border-style: double;
+    border-color: maroon;
+    border-width: .4rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header,footer{
+    background-color:greenyellow;
+    height: 20vh;
+}
+
+footer{
+    align-items:flex-end;
+}
+.main{
+    display: flex;
+    flex: .5;
+}
+
+.main > article{
+    flex: 2;
+    background-color: ivory;
+    order: 1;
+}
+.main > nav{
+    flex: 1;
+    background-color: lightblue;
+    order: 3;
+}
+.main > aside{
+    flex: 1;
+    background-color: lightpink;
+    order: 2;
+}
